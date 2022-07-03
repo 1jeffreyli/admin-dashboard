@@ -150,10 +150,11 @@ body, html {
     width: 90%;
     display: grid;
     grid-template-columns: 1fr 2fr;
-    grid-template-rows: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
 }
 
-.trending-card:nth-child(1) {
-    grid-column: 1 / 2;
-    grid-row: 1 / span 2;
+.card-text {
+    width: 100%;
 }
