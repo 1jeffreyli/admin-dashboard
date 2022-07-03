@@ -79,11 +79,10 @@ body, html {
 }
 
 .profile-box {
+    /* height: 100px; */
     display: grid;
     grid-template-columns: 2fr 1fr;
     border: 1px solid orange;
-    justify-items: start;
-    align-items: center;
 }
 
 .profile-box button {
@@ -91,23 +90,41 @@ body, html {
     border: 1px solid black;
 }
 
+.action-buttons {
+    height:100%;
+}
+
 .greeting {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 2fr;
+    grid-template-columns: 1fr 5fr;
+    align-items: center;
+    justify-items: center;
+    /* grid-template-rows: 1fr 2fr; */
 }
 
-.greeting:nth-child(1) {
-    grid: 1 / 1 / 3 / 2;
+.greeting > span {
+    justify-self: start;
 }
 
-.greeting:nth-child(2) {
-    grid: 1 / 2 / 2 / 3;
+.greeting > span > p {
+    margin: 0;
 }
 
-.greeting:nth-child(3) {
-    grid-column: -1 / -2;
+.greeting > span > p:nth-child(2) {
+    font-size: 24px;
 }
+
+.action-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.action-buttons button {
+    height: 25px;
+    width: 75px;
+}
+
 
 .main-content {
     background-color: lightgrey;
