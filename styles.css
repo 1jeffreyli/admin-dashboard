@@ -46,12 +46,14 @@ body, html {
 .search-box {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+    border: 1px solid yellow;
 }
 
 .profile-box {
     display: flex;
     justify-content: space-around;
     /* grid-template-columns: repeat(auto-fit, minmax(50px, 1fr)); */
+    border: 1px solid orange;
 }
 
 .profile-box button {
@@ -97,6 +99,23 @@ body, html {
 
 .projects {
     grid-area: projects;
+    /* width: 100%; */
+    /* display: grid; */
+    /* overflow: hidden; */
+}
+
+.card {
+    width: 90%;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, minmax(50px, 1fr));
+    border: 1px solid yellow;
+    justify-items: center;
+    align-items: start;
+    gap: 15px;
 }
 
 .announcements {
