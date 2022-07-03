@@ -11,6 +11,7 @@ body, html {
     display: grid;
     grid-template-columns: 1fr 4fr;
     grid-template-rows: 1fr 4fr;
+    overflow: auto;
 }
 
 .sidebar {
@@ -137,4 +138,22 @@ body, html {
 .announcements-card p{
     font-size: 14px;
     margin: 0 auto;
+}
+
+.trending-container {
+    padding: 10px;
+    display: grid;
+    grid-template-rows: repeat(auto-fit, minmax(50px, 1fr));
+}
+
+.trending-card {
+    width: 90%;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.trending-card:nth-child(1) {
+    grid-column: 1 / 2;
+    grid-row: 1 / span 2;
 }
