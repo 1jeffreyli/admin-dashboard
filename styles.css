@@ -200,6 +200,15 @@ body, html {
     grid-column: 1 / 2;
 }
 
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, minmax(50px, 1fr));
+    justify-items: center;
+    align-items: start;
+    gap: 15px;
+}
+
 .card {
     width: 300px;
     height: 200px;
@@ -209,13 +218,8 @@ body, html {
     box-shadow: var(--box-shadow);
 }
 
-.cards {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(3, minmax(50px, 1fr));
-    justify-items: center;
-    align-items: start;
-    gap: 15px;
+.card > a {
+    text-decoration: none;
 }
 
 .announcements {
