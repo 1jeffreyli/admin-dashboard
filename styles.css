@@ -77,6 +77,15 @@ body, html {
     color: var(--400);
 }
 
+.sidebar-links > ul >img {
+    fill: white;
+}
+
+.material-symbols-outlined {
+    color: white;
+    height: 100px;
+}
+
 .header {
     background-color: var(--100);
     grid-column: 2 / 3;
