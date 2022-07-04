@@ -73,17 +73,21 @@ body, html {
     text-align: center;
 }
 
-.sidebar-links a:hover {
+.sidebar-links a:hover{
     color: var(--400);
 }
 
-.sidebar-links > ul >img {
-    fill: white;
+.sidebar-links > li:hover {
+    color: var(--400);
 }
 
-.material-symbols-outlined {
-    color: white;
-    height: 100px;
+.sidebar-links > li {
+    /* display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));
+    align-items: center;
+    padding: 5px; */
+    /* justify-items: center; */
+    /* justify-content: center; */
 }
 
 .header {
