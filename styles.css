@@ -9,6 +9,7 @@
     --700: #1d4ed8;
     --800: #1e40af;
     --900: #1e3a8a;
+    --box-shadow: 0px 2px 6px 0px rgba(0,0,0,0.75);
 }
 
 body, html {
@@ -29,7 +30,7 @@ body, html {
 
 .sidebar {
     width: 100%;
-    background-color: blue;
+    background-color: var(--900);
     grid-column: 1 / 2;
     grid-row: 1 / 3;
     display: grid;
@@ -46,6 +47,7 @@ body, html {
 }
 
 .dashboard-logo h1 {
+    color: white;
     margin: 0;
     width: 100%;
     font-size: 24px;
@@ -72,22 +74,23 @@ body, html {
 }
 
 .sidebar-links a:hover {
-    color: lightcoral;
+    color: var(--400);
 }
 
 .header {
-    background-color: green;
+    background-color: var(--100);
     grid-column: 2 / 3;
     grid-row: 1 / 2;
     display: grid;
     grid-template-rows: repeat(auto-fit, minmax(50px, 1fr));
+    box-shadow: var(--box-shadow);
+    position: relative;
 }
 
 .search-box {
     display: grid;
     grid-template-columns: 1fr 6fr repeat(3, 1fr);
     /* grid-template-columns: repeat(6, minmax(50px, 1fr)); */
-    border: 1px solid yellow;
     align-items: center;
     justify-items: center;
     width: 100%;
@@ -117,10 +120,8 @@ body, html {
 }
 
 .profile-box {
-    /* height: 100px; */
     display: grid;
     grid-template-columns: 2fr 1fr;
-    border: 1px solid orange;
 }
 
 .profile-box button {
@@ -165,7 +166,7 @@ body, html {
 
 
 .main-content {
-    background-color: lightgrey;
+    background-color: var(--300);
     grid-column: 2 / 3;
     grid-row: 2 / 3;
     display: grid;
@@ -179,7 +180,7 @@ body, html {
 }
 
 .main-content div{
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 
 .projects {
@@ -190,13 +191,15 @@ body, html {
     width: 300px;
     height: 200px;
     padding: 10px;
+    border-radius: 15px;
+    background-color: var(--100);
+    box-shadow: var(--box-shadow);
 }
 
 .cards {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(3, minmax(50px, 1fr));
-    border: 1px solid yellow;
     justify-items: center;
     align-items: start;
     gap: 15px;
@@ -211,11 +214,21 @@ body, html {
     display: grid;
     grid-template-rows: repeat(auto-fit, minmax(50px, 1fr));
     padding: 20px;
+    row-gap: 5px;
+    border-radius: 15px;
+    background-color: var(--100);
+    box-shadow: var(--box-shadow);
 }
 
 .announcements-card {
     padding: 10px;
+    border-radius: 15px;
 }
+
+.announcements-card:nth-child(n) {
+    border-style: none;
+}
+
 
 .announcements-card h3{
     margin: 0 auto;
@@ -230,6 +243,9 @@ body, html {
     padding: 10px;
     display: grid;
     grid-template-rows: repeat(auto-fit, minmax(50px, 1fr));
+    border-radius: 15px;
+    background-color: var(--100);
+    box-shadow: var(--box-shadow);
 }
 
 .trending-card {
