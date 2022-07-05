@@ -210,6 +210,10 @@ img[src*=".png"] {
     grid-column: 1 / 2;
 }
 
+.main-content h2 {
+    font-weight: lighter;
+}
+
 .cards {
     display: grid;
     grid-template-columns: 1fr 1fr;
