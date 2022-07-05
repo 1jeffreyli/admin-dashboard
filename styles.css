@@ -17,7 +17,7 @@
     'FILL' 0,
     'wght' 400,
     'GRAD' 0,
-    'opsz' 48
+    'opsz' 48;
   }
 
 body, html {
@@ -36,7 +36,7 @@ img[src*=".png"] {
     min-height: 100%;
     width: auto;
     display: grid;
-    grid-template-columns: 1fr 4fr;
+    grid-template-columns: 1fr 6fr;
     grid-template-rows: 1fr 6fr;
     overflow: auto;
 }
@@ -95,14 +95,22 @@ img[src*=".png"] {
     color: var(--400);
 }
 
+span.material-symbols-outlined {
+    font-size: 30px;
+}
+
 .sidebar-links > li {
-    /* align-self: start; */
-    /* display: grid; */
-    /* grid-template-rows: repeat(auto-fill, minmax(50px, 1fr)); */
-    /* align-items: start; */
-    padding: 5px;
+    padding: 5px 5px 5px 15px;
     text-align: start;
-    /* justify-items: center; */
+}
+
+.sidebar-links > li > a {
+    display: flex;
+    align-items: flex-end;
+}
+
+.sidebar-links > li > a > p {
+    padding-left: 15px;
 }
 
 .header {
@@ -209,6 +217,10 @@ img[src*=".png"] {
 
 .projects {
     grid-column: 1 / 2;
+}
+
+.projects h2 {
+    padding-left: 2.5rem;
 }
 
 .main-content h2 {
