@@ -24,6 +24,7 @@ body, html {
     height: 100%;
     margin: 0px auto;
     padding: 0px auto;
+    font-family: "font-sans", "font-serif", "font-mono";
 }
 
 .wrapper {
@@ -221,15 +222,21 @@ body, html {
 .card {
     width: 300px;
     height: 200px;
-    padding: 10px;
+    padding: 1rem;
     border-radius: 15px;
     background-color: var(--100);
     box-shadow: var(--box-shadow);
     border-left: 5px solid var(--700);
+    display: grid;
 }
 
-.card > a {
+.card-actions a {
     text-decoration: none;
+}
+
+.card-actions {
+    align-self: end;
+    justify-self: right;
 }
 
 .announcements {
